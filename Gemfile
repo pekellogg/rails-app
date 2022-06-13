@@ -7,7 +7,8 @@ gem 'dotenv-rails'
 # DB for ActiveRecord
 gem 'sqlite3'
 # App server
-gem 'puma', '~> 3.11'
+# gem 'puma', '~> 3.11'
+gem 'puma'
 gem 'nodejs-rails', '~> 0.0.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
