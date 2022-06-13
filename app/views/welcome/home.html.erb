@@ -1,8 +1,14 @@
 <% if session[:user_id] %>
+
   <h1><%= @user.name %></h1>
   <h2>Email: <%= @user.email %></h2>
   <h2>GitHub UID: <%= @user.uid %></h2>
   <img src="<%= @user.image %>">
+
 <% else %>
+  <h2>Log In with Existing Account</h2>
   <%= link_to('Log in with GitHub!', '/auth/github', method: :post) %>
+
+  <h2>Create New Account</h2>
+  <%= link_to('Create Account', '/users/new', method: :get) %>
 <% end %>

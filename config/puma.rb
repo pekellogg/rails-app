@@ -1,6 +1,6 @@
 max_threads_count = ENV.fetch('RAILS_MAX_THREADS', 5)
 min_threads_count = ENV.fetch('RAILS_MIN_THREADS') { max_threads_count }
-workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+# workers Integer(ENV['WEB_CONCURRENCY'] || 2)
 threads min_threads_count, max_threads_count
 
 rails_env = ENV.fetch('RAILS_ENV', 'development')

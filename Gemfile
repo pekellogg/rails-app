@@ -20,7 +20,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth'
 gem 'omniauth-rails_csrf_protection'
 gem "omniauth-github", "~> 2.0"
-# gem 'nakayoshi_fork'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
