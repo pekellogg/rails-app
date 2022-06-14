@@ -46,8 +46,11 @@ Rails.application.configure do
   # config.action_cable.url = 'wss://example.com/cable'
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
 
-  # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = true
+  # Force all access to the app over SSL, use Strict-Transport-Security, and do not use secure cookies.
+  config.force_ssl = true, secure_cookies: false
+
+  # explicitly-defined Rails 7 defaults
+  config.session_store :cookie_store#, key: "rails-app"
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.

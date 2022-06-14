@@ -1,7 +1,11 @@
-require_relative 'boot'
-
+require_relative "boot"
 require "rails"
-# Pick the frameworks you want:
+require "bundler/setup"
+require "pry"
+require "require_all"
+# require_all File.expand_path('../app/jobs', __dir__)
+
+# frameworks
 require "active_model/railtie"
 require "active_job/railtie"
 require "active_record/railtie"
@@ -11,23 +15,24 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
-# require "rails/test_unit/railtie"
 
-# Require the gems listed in Gemfile, including any gems
-# you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
+Bundler.require(*Rails.groups)#ENV['APP_TOKEN']
+# DataJob.call
+
+# note --> uncomment out below after data reformat + models ingestion in development
+# Dotenv.load
 
 module RailsApp
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
+    # Initialize configuration defaults
+    config.load_defaults 7.0
 
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration can go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded after loading
-    # the framework and any gems in your application.
+    # config/environments/* take precedence over configs here.
+    # App configuration can go into files in config/initializers
+    # *.rb in config/initializers are automatically loaded after loading
+    # the framework and Gemfile
 
-    # Don't generate system test files.
+    # omit test files.
     config.generators.system_tests = nil
   end
 end

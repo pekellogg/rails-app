@@ -11,8 +11,12 @@ Rails.application.configure do
   # full error reports.
   config.consider_all_requests_local = true
 
-  # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  # Force all access to the app over SSL, use Strict-Transport-Security
+  # note --> investigate: are cookies secure cookies?
+  config.force_ssl = true #{secure_cookies: false}
+
+  # explicitly-defined Rails 7 defaults
+  config.session_store :cookie_store#, key: "rails-app"
 
   # Enable/disable caching. Caching disabled by default.
   # Run rails dev:cache to toggle caching.
@@ -53,4 +57,31 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # ACTIVE RECORD
+  config.active_record.default_timezone = :local # default: UTC
+
+  # NOTES
+  # 3.5.13 ActionDispatch::Cookies
+
+  # Sets cookies for the request.
+  # 3.5.14 ActionDispatch::Session::CookieStore
+
+  # Is responsible for storing the session in cookies. An alternate middleware can be used for this by changing config.session_store.
+  # 3.5.15 ActionDispatch::Flash
+
+  # Sets up the flash keys. Only available if config.session_store is set to a value.
+  # 3.5.16 Rack::MethodOverride
+
+  # Allows the method to be overridden if params[:_method] is set. This is the middleware which supports the PATCH, PUT, and DELETE HTTP method types.
+
+  # WEB SERVER HEADERS 7.0
+#   {
+#   "X-Frame-Options" => "SAMEORIGIN",
+#   "X-XSS-Protection" => "0",
+#   "X-Content-Type-Options" => "nosniff",
+#   "X-Download-Options" => "noopen",
+#   "X-Permitted-Cross-Domain-Policies" => "none",
+#   "Referrer-Policy" => "strict-origin-when-cross-origin"
+# }
 end
