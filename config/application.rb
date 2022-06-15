@@ -1,9 +1,7 @@
 require_relative "boot"
+require_relative "../app/jobs/data_job"
 require "rails"
 require "bundler/setup"
-require "pry"
-require "require_all"
-# require_all File.expand_path('../app/jobs', __dir__)
 
 # frameworks
 require "active_model/railtie"
@@ -16,11 +14,10 @@ require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
 
-Bundler.require(*Rails.groups)#ENV['APP_TOKEN']
-# DataJob.call
+Bundler.require(*Rails.groups)
 
-# note --> uncomment out below after data reformat + models ingestion in development
-# Dotenv.load
+Dotenv::Railtie.load
+DataJob.call
 
 module RailsApp
   class Application < Rails::Application

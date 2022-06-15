@@ -10,10 +10,7 @@ ruby '3.0.0'
 # rails 5.2 will reach EoL in 6/2022
 gem 'rails'
 
-# better-looking relative dependencies
-gem 'require_all', '~> 3.0'
-
-gem 'dotenv-rails'
+gem 'dotenv-rails', groups: [:development, :test]
 
 # bulk import gem
 # gem 'activerecord-import', '~> 1.4'
@@ -28,9 +25,6 @@ gem 'puma'
 gem 'rest-client'
 gem 'json'
 
-# associate data
-# gem 'activerecord-import'
-
 gem 'nodejs-rails'
 
 # stylesheets
@@ -39,7 +33,8 @@ gem 'sass-rails'
 # fast navigation
 gem 'turbolinks'
 
-# Use ActiveModel has_secure_password instead of bcrypt
+# Use ActiveModel has_secure_password for built-in validations
+gem 'bcrypt', '~> 3.1.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap'

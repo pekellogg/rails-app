@@ -4,8 +4,6 @@
 class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
 
-  BODY = []
-
   # note --> uncomment out code to install once data formatted within app/helpers -> jobs/data_job
   # def self.ar_import_companies(columns, collection)
   #   self.import(columns, collection)
