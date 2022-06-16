@@ -1,0 +1,25 @@
+           
+           
+            # testing fields for variability
+            # "expires"=>"01/01/2021",
+            # "status_desc"=>"RE-LICENSED"
+            licenses_audit = []
+
+            # testing fields for variability
+            # does "name" always contain "X"?
+            # "name"=>"# JUAN HANDYMAN"
+            businesses_audit = []
+           
+            #     # add to collection for audit for field variability
+            #     licenses_audit << [license["expires"], license["status_desc"]]
+            #     businesses_audit << business["name"]
+            
+            
+            # write to file for audit for field variability
+            # businesses_audit.each do | biz |
+            #     File.write("biz-test.txt", "#{biz}\n", mode: 'a')
+            # end
+
+            # licenses_audit.each do | exp, status |
+            #     File.write("lic-test.txt", "Expires: #{exp} - Status: #{status}\n", mode: 'a')
+            # end

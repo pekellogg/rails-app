@@ -1,7 +1,6 @@
 development:
-  adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") %>
-  channel_prefix: rails-app_production
+  adapter: async
+  channel_prefix: rails-app_development
 
 test:
   adapter: async
