@@ -1,7 +1,7 @@
 module ContractorsHelper
     def self.format(contractor_hash)
         contractor = {}
-        
+
         # format name
         name = contractor_hash["primaryprincipalname"]
         name_split = name.split(", ")

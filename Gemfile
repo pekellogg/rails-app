@@ -12,6 +12,12 @@ gem 'rails'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
+# background processing framework
+gem 'sidekiq'
+gem 'redis'
+gem 'redis-namespace'
+gem 'redis-rails'
+
 # bulk import gem
 # gem 'activerecord-import', '~> 1.4'
 
@@ -48,7 +54,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
   gem 'awesome_print'
-  gem 'pry-reload', '~> 0.3'
 end
 
 group :development do
