@@ -25,7 +25,7 @@ module RailsApp
     config.load_defaults 7.0
 
     # 3rd party adapter
-    config.active_job.queue_adapter = :sidekiq
+    # config.active_job.queue_adapter = :sidekiq
     
     # config/environments/* take precedence over configs here.
     # App configuration can go into files in config/initializers
