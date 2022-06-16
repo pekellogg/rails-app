@@ -1,4 +1,11 @@
 module LicensesHelper
+    # container for ActiveRecord#import
+    @licenses_helper = []
+
+    def self.format_push_to_container(license_hash)
+        self.push_to_container(self.format(license_hash))
+    end
+
     def self.format(license_hash)
         license = {}
         
@@ -23,5 +30,13 @@ module LicensesHelper
 
         # return new object
         license
+    end
+
+    def self.push_to_container(formatted_license_hash)
+        @licenses_helper << formatted_license_hash
+    end
+
+    def self.ar_import(columns, collection)
+        License.ar_import(columns, collection)
     end
 end

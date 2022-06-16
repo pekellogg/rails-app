@@ -12,14 +12,11 @@ gem 'rails'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
-# background processing framework
-gem 'sidekiq'
-gem 'redis'
-gem 'redis-namespace'
-gem 'redis-rails'
+# for chron-based rake tasks
+gem 'whenever', require: false
 
 # bulk import gem
-# gem 'activerecord-import', '~> 1.4'
+gem 'activerecord-import', '~> 1.4'
 
 # DB for ActiveRecord
 gem 'sqlite3'

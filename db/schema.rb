@@ -44,7 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_14_202519) do
     t.string "status_code"
     t.string "ubi"
     t.string "effective"
-    t.string "expiration"
+    t.string "expires"
     t.string "status_desc"
     t.string "status"
     t.integer "contractor_id"

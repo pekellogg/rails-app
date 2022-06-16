@@ -1,4 +1,11 @@
 module ContractorsHelper
+    # container for ActiveRecord#import
+    @contractors_helper = []
+
+    def self.format_push_to_container(contractor_hash)
+        self.push_to_container(self.format(contractor_hash))
+    end
+
     def self.format(contractor_hash)
         contractor = {}
 
@@ -14,6 +21,14 @@ module ContractorsHelper
 
         # return new object
         contractor
+    end
+    
+    def self.push_to_container(formatted_contractor_hash)
+        @contractors_helper << formatted_contractor_hash
+    end
+
+    def self.ar_import(columns, collection)
+        Contractor.ar_import(columns, collection)
     end
 
     def full_name

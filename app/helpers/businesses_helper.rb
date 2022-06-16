@@ -1,4 +1,11 @@
 module BusinessesHelper
+    # container for ActiveRecord#import
+    @businesses_helper = []
+
+    def self.format_push_to_container(business_hash)
+        self.push_to_container(self.format(business_hash))
+    end
+
     def self.format(business_hash)
         business = {}
         
@@ -20,5 +27,13 @@ module BusinessesHelper
 
         # return new object
         business
+    end
+
+    def self.push_to_container(formatted_business_hash)
+        @businesses_helper << formatted_business_hash
+    end
+
+    def self.ar_import(columns, collection)
+        Business.ar_import(columns, collection)
     end
 end

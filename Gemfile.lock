@@ -54,6 +54,8 @@ GEM
     activerecord (7.0.3)
       activemodel (= 7.0.3)
       activesupport (= 7.0.3)
+    activerecord-import (1.4.0)
+      activerecord (>= 4.2)
     activestorage (7.0.3)
       actionpack (= 7.0.3)
       activejob (= 7.0.3)
@@ -73,9 +75,9 @@ GEM
       msgpack (~> 1.2)
     builder (3.2.4)
     byebug (11.1.3)
+    chronic (0.10.2)
     coderay (1.1.3)
     concurrent-ruby (1.1.10)
-    connection_pool (2.2.5)
     crass (1.0.6)
     digest (3.1.0)
     domain_name (0.5.20190701)
@@ -197,25 +199,6 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redis (4.6.0)
-    redis-actionpack (5.3.0)
-      actionpack (>= 5, < 8)
-      redis-rack (>= 2.1.0, < 3)
-      redis-store (>= 1.1.0, < 2)
-    redis-activesupport (5.3.0)
-      activesupport (>= 3, < 8)
-      redis-store (>= 1.3, < 2)
-    redis-namespace (1.8.2)
-      redis (>= 3.0.4)
-    redis-rack (2.1.4)
-      rack (>= 2.0.8, < 3)
-      redis-store (>= 1.2, < 2)
-    redis-rails (5.0.2)
-      redis-actionpack (>= 5.0, < 6)
-      redis-activesupport (>= 5.0, < 6)
-      redis-store (>= 1.2, < 2)
-    redis-store (1.9.1)
-      redis (>= 4, < 5)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -232,10 +215,6 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sidekiq (6.5.1)
-      connection_pool (>= 2.2.2)
-      rack (~> 2.0)
-      redis (>= 4.2.0)
     spring (3.1.1)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
@@ -265,12 +244,15 @@ GEM
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
     zeitwerk (2.6.0)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord-import (~> 1.4)
   awesome_print
   bcrypt (~> 3.1.7)
   bootsnap
@@ -285,16 +267,13 @@ DEPENDENCIES
   pry
   puma
   rails
-  redis
-  redis-namespace
-  redis-rails
   rest-client
   sass-rails
-  sidekiq
   spring (~> 3.0)
   sqlite3
   turbolinks
   web-console
+  whenever
 
 RUBY VERSION
    ruby 3.0.0p0

@@ -34,13 +34,6 @@ tmp/
 # ignore environment variables
 .env
 
-# ignore local set-up de-bugging script
-check.rb
-
 # omit certs for now
 config/certs/
 path/
-
-# ignore development tools
-generated_models_reference.rb
-

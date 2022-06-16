@@ -17,22 +17,16 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 
 Dotenv::Railtie.load
-# DataJob.call
 
 module RailsApp
   class Application < Rails::Application
-    # Initialize configuration defaults
+    # initialize configuration defaults
     config.load_defaults 7.0
-
-    # 3rd party adapter
-    # config.active_job.queue_adapter = :sidekiq
     
-    # config/environments/* take precedence over configs here.
-    # App configuration can go into files in config/initializers
-    # *.rb in config/initializers are automatically loaded after loading
-    # the framework and Gemfile
+    # config/environments/* take precedence
+    # app configs --> config/initializers which are auto-loaded after the framework and Gemfile
 
-    # omit test files.
+    # omit test files
     config.generators.system_tests = nil
   end
 end
