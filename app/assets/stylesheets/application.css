@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+ input {
+    line-height: 2em;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(38, 38, 48)
+  }
+
+.form-label {
+    visibility: hidden;
+}
+
+.field-tag {
+  border-radius:4px;
+}
+
+.login-button {
+  border-radius:4px;
+}

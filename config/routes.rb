@@ -16,9 +16,11 @@ Rails.application.routes.draw do
     resources :users, only: [:new, :create, :edit, :update, :show, :destroy]
     resources :users, only: [:show] do
         resources :projects, only: [:new, :create, :show, :edit, :update, :index, :destroy]
-        resources :contractors, only: [:index, :show, :destroy]
     end
 
     # Contractor
     resources :contractors, only: [:create, :index, :show, :update]
+
+    # License
+    resources :licenses, only: [:index]
 end
