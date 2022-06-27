@@ -31,3 +31,9 @@
 .login-button {
   border-radius:4px;
 }
+
+div.panel {
+  border: 2px solid black;
+  border-width: thin;
+  padding: 1em;
+}

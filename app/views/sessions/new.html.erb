@@ -1,25 +1,33 @@
 <h2>Home Improvement Hub</h2>
+<div class="panel">
 <h5>Please log in.</h5>
-<%= form_for(:session, url: login_path) do |f| %>
-    <%= f.label(:email, class: "form-label") %> <br><br>
-    <%= f.email_field(:email, placeholder: "Email", class: "field-tag") %> 
+    <%= form_for(:session, url: login_path) do |f| %>
+        <%= f.label(:email, class: "form-label") %> <br><br>
+        <%= f.email_field(:email, placeholder: "Email", class: "field-tag") %> 
 
-    <%= f.label(:password, class: "form-label") %> <br><br>
-    <%= f.password_field(:password, placeholder: "Strong password", class: "field-tag") %>
+        <%= f.label(:password, class: "form-label") %> <br><br>
+        <%= f.password_field(:password, placeholder: "Strong password", class: "field-tag") %>
 
-    <br><br>
+        <br><br>
 
-    <%= f.submit("Submit", class: "login-button") %>
-<% end %>
-
-<h5>New user?</h5>
-<section>
-    <%= form_tag(signup_path, method: :get) do %>
-        <button type="submit">Sign up</button>
+        <%= f.submit("Submit", class: "login-button") %>
     <% end %>
-</section>
+</div>
 
-<h5>Other Sign In Options</h5>
-<%= form_tag("/auth/github", method: :post, data: {turbo: false}) do %>
-    <button type="submit">Login with Github</button>
-<% end %>
+<br>
+
+<div class="panel">
+    <h5>New user?</h5>
+        <%= form_tag(signup_path, method: :get) do %>
+            <button type="submit">Sign up</button>
+        <% end %>
+</div>
+
+<br>
+
+<div class="panel">
+    <h5>Other Sign In Options</h5>
+    <%= form_tag("/auth/github", method: :post, data: {turbo: false}) do %>
+        <button type="submit">Login with Github</button>
+    <% end %>
+</div>
