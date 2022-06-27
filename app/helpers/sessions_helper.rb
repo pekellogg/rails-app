@@ -24,6 +24,6 @@ module SessionsHelper
     end
 
     def third_party_login?
-        auth["uid"]
+        auth["uid"] if auth
     end
 end

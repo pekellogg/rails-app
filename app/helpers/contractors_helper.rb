@@ -30,8 +30,4 @@ module ContractorsHelper
     def self.ar_import(columns, collection)
         Contractor.import(columns, collection)
     end
-
-    def full_name
-        self.first_name + self.last_name
-    end
 end

@@ -24,16 +24,22 @@
     visibility: hidden;
 }
 
+.hidden-parent {
+  visibility: hidden;
+}
+
 .field-tag {
   border-radius:4px;
 }
 
-.login-button {
+.button {
   border-radius:4px;
+  line-height: 2em;
 }
 
 div.panel {
   border: 2px solid black;
   border-width: thin;
   padding: 1em;
+  border-radius:4px;
 }

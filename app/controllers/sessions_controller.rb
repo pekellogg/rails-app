@@ -34,7 +34,7 @@ class SessionsController < ApplicationController
     # native log in within app
     else
       user = User.find_by(email: params[:session][:email].downcase)
-      if user && user.authenticate(params[:session][:password])
+      if user && user.authenticate(params[:session][:password]) 
         log_in(user)
         flash.now[:notice] = "Welcome back, #{user.first_name}!"
         redirect_to(user)
@@ -52,13 +52,7 @@ class SessionsController < ApplicationController
 
   private
 
-  def session_params
-    params.require(:email, :password)
-  end
-
   def auth
-    # token = request.env["omniauth.auth"]["credentials"]["token"]
-    # expires = request.env["omniauth.auth"]["credentials"]["expires"]
     request.env["omniauth.auth"]
   end
 end

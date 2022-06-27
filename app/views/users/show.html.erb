@@ -1,20 +1,7 @@
 <h1>Hi, <%= current_user.first_name %></h1>
-<h3><%= link_to("Review Projects", user_projects_path(current_user)) %></h3>
-<h3><%= link_to("New Project", new_user_project_path(current_user)) %> | <%= link_to("Find a Contractor", contractors_path) %></h3>
-
 
 <h4>License Validator</h4>
 <%= form_tag(licenses_path, method: :get) do %>
-  <p>
-    <%= text_field_tag(:query, params[:query]) %>
-    <%= submit_tag("Search", name: nil) %>
-  </p>
+    <%= text_field_tag(:query, params[:query], class: "field-tag") %>
+    <%= submit_tag("Search", name: nil, class: "button") %>
 <% end %>
-
-<h4>All Recipes</h4>
-<% @recipes.each do |recipe| %>
-  <%= link_to recipe.name, edit_recipe_path(recipe) %><br/>
-<% end %>
-
-<br><br><br>
-<%= link_to("Logout", "/logout", method: :delete) %>

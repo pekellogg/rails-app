@@ -66,7 +66,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_26_020350) do
 
   create_table "projects", force: :cascade do |t|
     t.string "name"
-    t.string "type"
     t.boolean "status", default: true
     t.text "desc"
     t.integer "contractor_id"

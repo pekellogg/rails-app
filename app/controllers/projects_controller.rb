@@ -1,15 +1,27 @@
 class ProjectsController < ApplicationController
     def index
-        @projects = Project.all 
+        if @user = check_from_user
+            @user.projects
+        else
+            @projects = Project.all 
+        end
     end
     
     def show
-        @project = Project.find(params[:id])
+        if params[:user_id]
+          @project = User.find(params[:user_id]).projects.find(params[:id])
+        else
+          @project = Project.find(params[:id])
+        end
     end
-
-    def new
-        @project = Project.new
-    end
+    
+      def new
+        if params[:user_id] && !User.exists?(params[:user_id])
+          redirect_to(users_path, alert: "User not found!")
+        else
+          @project = Project.new(user_id: params[:user_id])
+        end
+      end
 
     def create
         @project = Project.new(project_params)
@@ -21,6 +33,11 @@ class ProjectsController < ApplicationController
     end
 
     def edit
+        if params[:user_id]
+            user = User.find_by(id: params[:user_id])
+            @project = user.projects.find_by(id: params[:id])
+            redirect_to(user_projects_path(user), alert: "Project not found!") if @project.nil?
+        end
         @project = Project.find(params[:id])
     end
 
@@ -44,6 +61,10 @@ class ProjectsController < ApplicationController
     private
 
     def project_params
-        params.require(:project).permit(:name, :type, :desc, :status)
+        params.require(:project).permit(:name, :type, :desc, :status, :user_id)
+    end
+
+    def check_from_user
+        params[:user_id] ? User.find(params[:user_id]) : false
     end
 end

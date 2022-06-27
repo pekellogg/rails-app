@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
     # app root
-    root "users#home"
+    root "users#show"
 
     # OAuth
     # match "/auth/:provider/callback", to: "sessions#create", via: [:post, :get]
@@ -17,6 +17,9 @@ Rails.application.routes.draw do
     resources :users, only: [:show] do
         resources :projects, only: [:new, :create, :show, :edit, :update, :index, :destroy]
     end
+
+    # Project
+    resources :projects
 
     # Contractor
     resources :contractors, only: [:create, :index, :show, :update]

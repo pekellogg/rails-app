@@ -1,41 +1,33 @@
 <h3>Create an Account</h3>
 <%= form_for(@user) do |f| %>
-
     <% if @user.errors.any? %>
         <div id="error_explanation">
             <h3><%= pluralize(@user.errors.count, "error") %> prohibited this post from being saved:</h3>
-
             <ul>
                 <% @user.errors.full_messages.each do |message| %>
                     <li><%= message %></li>
                 <% end %>
             </ul>
-
         </div>
     <% end %>
 
-    <div class="first_name_field">
-        <%= f.label(:first_name) %><br>
-        <%= f.text_field(:first_name) %><br>
-    </div>
+    <div class="panel">
+        <%= f.label(:first_name, class: "form-label") %><br>
+        <%= f.text_field(:first_name, placeholder: "First name", class: "field-tag") %><br>
 
-    <div class="last_name_field">
-        <%= f.label(:last_name) %><br>
-        <%= f.text_field(:last_name) %><br>
-    </div>
+        <%= f.label(:last_name, class: "form-label") %><br>
+        <%= f.text_field(:last_name, placeholder: "Last name", class: "field-tag") %><br>
 
-    <div class="email_field">
-        <%= f.label(:email) %><br>
-        <%= f.text_field(:email) %><br>
-    </div>
+        <%= f.label(:email, class: "form-label") %><br>
+        <%= f.text_field(:email, placeholder: "Email", class: "field-tag") %><br>
 
-    <div class="passsword_field">
-        <%= f.label(:password) %><br>
-        <%= f.password_field(:password_digest) %><br>
-    </div>
+        <%= f.label(:password, class: "form-label") %><br>
+        <%= f.password_field(:password, placeholder: "Strong password", class: "field-tag") %><br><br>
 
-    <div class="actions">
-        <%= f.submit %>
+        <%= f.label(:password_confirmation, class: "form-label") %><br>
+        <%= f.password_field(:password_confirmation, placeholder: "Strong password again", class: "field-tag") %><br><br>
+
+        <%= f.submit("Submit", class: "button") %><br>
     </div>
 
 <% end %>

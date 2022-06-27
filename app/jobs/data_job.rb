@@ -54,5 +54,4 @@ module DataJob
         @licenses_helper.clear
         @businesses_helper.clear
     end
-
 end

@@ -12,13 +12,16 @@ set :environment, "development"
 # end
 
 # TESTING
-# every 1.minute do
-#     rake "external_data:refresh"
-# end
+every 1.minute do
+    rake "external_data:refresh"
+end
+
 
 # HELPFUL
 # write to crontab
 # $ whenever --user --update-crontab
+
 # list current jobs
 # crontab -l
+
 # whenever --help

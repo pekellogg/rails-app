@@ -5,10 +5,10 @@ require "pry"
 # namespace :external_data do
 desc "retrieve and refresh app external data"
 task refresh: :environment do
-    Rake::Task["external_data:drop_bcl_tables"].execute
-    Rake::Task["external_data:api_call"].execute
-    Rake::Task["external_data:format_data"].execute
-    Rake::Task["external_data:import_data"].execute
+    Rake::Task["drop_tables"].execute
+    Rake::Task["api_call"].execute
+    Rake::Task["format_data"].execute
+    Rake::Task["import_data"].execute
 end
 
 # drop tables

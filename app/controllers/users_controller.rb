@@ -2,20 +2,13 @@ require "pry"
 class UsersController < ApplicationController
     before_action(:require_login, only: [:edit, :update])
     
-    def home
-        if logged_in?
-            render(:home)
-        else
-            render("sessions/new")
-        end
-    end
-
-    def index
-        @users = User.all 
-    end
-    
     def show
-        @user = User.find(params[:id])
+        @user = User.find(params[:id]) if params[:id]
+        if logged_in?
+            render(:show)
+        else
+            redirect_to("sessions/new")
+        end
     end
 
     def new
@@ -24,11 +17,10 @@ class UsersController < ApplicationController
 
     def create
         @user = User.new(user_params)
-        @user = User.find_or_create_by(user_params)
         if @user.save
             log_in(@user)
             flash.now[:success] = "Welcome, #{@user.first_name}!"
-            redirect_to(@user)
+            redirect_to(:show)
         else
             flash.now[:alert] = "Could not create account!"
             render(:new)
@@ -43,9 +35,10 @@ class UsersController < ApplicationController
         @user = User.find(params[:id])
         @user.update(user_params)
         if @user.save
-            redirect_to("/")
+            flash.now[:notice] = "Successfully updated account details."
+            redirect_to(:show)
         else
-            flash.now[:alert] = "Could not update account!"
+            flash.now[:alert] = "Could not update account details!"
             render(:edit)
         end
     end
@@ -60,6 +53,6 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:first_name, :last_name, :email, :password_digest, identities: [])
+        params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, identities: [])
     end
 end
