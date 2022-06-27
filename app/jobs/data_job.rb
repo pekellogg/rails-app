@@ -18,7 +18,13 @@ module DataJob
     def self.call
         response = RestClient.get(self.form_uri)
         if response.code == 200
-            @response_body = JSON.parse(response.body)
+            body = JSON.parse(response.body)
+            body.each do |hash|
+                # push prepped and formatted fields to helper containers
+                ContractorsHelper.format_push_to_container(hash)
+                LicensesHelper.format_push_to_container(hash)
+                BusinessesHelper.format_push_to_container(hash)
+            end
         else
             "Server response code was #{response.code}"
         end
@@ -35,18 +41,15 @@ module DataJob
             LicensesHelper.format_push_to_container(hash)
             BusinessesHelper.format_push_to_container(hash)
         end
-        binding.pry
     end
 
     def self.import_formats
-        binding.pry
         ContractorsHelper.ar_import(Contractor::COLUMNS, @contractors_helper)
         LicensesHelper.ar_import(License::COLUMNS, @licenses_helper)
         BusinessesHelper.ar_import(Business::COLUMNS, @businesses_helper)
     end
 
     def self.clear_class_vars
-        binding.pry
         @contractors_helper.clear
         @licenses_helper.clear
         @businesses_helper.clear

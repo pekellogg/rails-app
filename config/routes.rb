@@ -1,20 +1,24 @@
 Rails.application.routes.draw do
-    # OAuth APIs
-    match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+    # app root
+    root "users#home"
+
+    # OAuth
+    # match "/auth/:provider/callback", to: "sessions#create", via: [:post, :get]
+    get "/auth/:provider/callback", to: "sessions#create"
     
+    # Session Tracking
+    get "/signup", to: "users#new"
+    get "/login", to: "sessions#new"
+    post "/login", to: "sessions#create"
+    delete "/logout", to: "sessions#destroy"
+  
     # User
-    root(to: 'welcome#home')
-    get '/users/home', to: 'welcome#home'
+    resources :users, only: [:new, :create, :edit, :update, :show, :destroy]
+    resources :users, only: [:show] do
+        resources :projects, only: [:new, :create, :show, :edit, :update, :index, :destroy]
+        resources :contractors, only: [:index, :show, :destroy]
+    end
 
-
-    # begin scratch
-    # resources :artists, only: [:index, :new, :edit]
-    resources :users, only: [:show, :new, :create, :edit, :update]
-
-    # resources :artists, only: [:show] do
-    #     resources :songs, only: [:show, :index]
-    # end
-
-    # root 'songs#index'
-    # end scratch
+    # Contractor
+    resources :contractors, only: [:create, :index, :show, :update]
 end

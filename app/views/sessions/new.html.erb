@@ -1,0 +1,21 @@
+<h3>Log in</h3>
+
+<%= form_for(:session, url: login_path) do |f| %>
+    <%= f.label(:email) %> <br>
+    <%= f.email_field(:email, class: "form-control") %> <br><br>
+
+    <%= f.label(:password) %> <br>
+    <%= f.password_field(:password, class: "form-control") %> <br><br>
+
+    <%= f.submit("Log in", class: "login-button") %>
+<% end %>
+
+<br><br>
+
+New user? <%= link_to("Sign up", signup_path) %>
+
+<br>
+
+<%= form_tag("/auth/github", method: :post, data: {turbo: false}) do %>
+    <button type="submit">Login with Github!</button>
+<% end %>

@@ -16,10 +16,10 @@ require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
 
-Dotenv::Railtie.load
-
 module RailsApp
   class Application < Rails::Application
+    Dotenv::Railtie.load
+
     # initialize configuration defaults
     config.load_defaults 7.0
     

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_14_202519) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_26_020350) do
   create_table "businesses", force: :cascade do |t|
     t.string "ubi"
     t.string "name"
@@ -31,6 +31,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_14_202519) do
     t.string "first_name"
     t.string "last_name"
     t.string "business_ubi"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "identities", force: :cascade do |t|
+    t.string "provider"
+    t.string "uid"
+    t.string "email"
+    t.string "image"
+    t.string "name"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -56,7 +67,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_14_202519) do
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.string "type"
-    t.boolean "status"
+    t.boolean "status", default: true
     t.text "desc"
     t.integer "contractor_id"
     t.integer "user_id"
@@ -74,11 +85,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_14_202519) do
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
-    t.string "name"
     t.string "email"
     t.text "password_digest"
-    t.string "image"
-    t.string "uid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -37,6 +37,6 @@ module LicensesHelper
     end
 
     def self.ar_import(columns, collection)
-        License.ar_import(columns, collection)
+        License.import(columns, collection)
     end
 end

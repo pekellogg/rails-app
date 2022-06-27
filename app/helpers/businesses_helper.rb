@@ -34,6 +34,6 @@ module BusinessesHelper
     end
 
     def self.ar_import(columns, collection)
-        Business.ar_import(columns, collection)
+        Business.import(columns, collection)
     end
 end

@@ -84,4 +84,6 @@ Rails.application.configure do
 #   "X-Permitted-Cross-Domain-Policies" => "none",
 #   "Referrer-Policy" => "strict-origin-when-cross-origin"
 # }
+
+  config.rake_eager_load = true
 end

@@ -28,7 +28,7 @@ module ContractorsHelper
     end
 
     def self.ar_import(columns, collection)
-        Contractor.ar_import(columns, collection)
+        Contractor.import(columns, collection)
     end
 
     def full_name

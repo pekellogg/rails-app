@@ -1,4 +1,3 @@
-<h1><%= Hi, @user.first_name %></h1>
-<h3>Review Projects | View Contractors </h3>
-
-<%= link_to("New Project", project_path) %> | <%= link_to("Find a Contractor", contractors_path) %>
+<h1>Hi, <%= current_user.first_name %></h1>
+<h3><%= link_to("Review Projects", user_projects_path(current_user)) %></h3>
+<%= link_to("New Project", new_user_project_path(current_user)) %> | <%= link_to("Find a Contractor", contractors_path) %>
