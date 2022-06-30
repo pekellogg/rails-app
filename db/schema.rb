@@ -18,7 +18,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_26_020350) do
     t.string "address"
     t.string "city"
     t.string "zip"
-    t.string "state"
     t.integer "state_id"
     t.string "code"
     t.string "code_desc"
@@ -30,7 +29,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_26_020350) do
     t.string "name"
     t.string "first_name"
     t.string "last_name"
-    t.string "business_ubi"
+    t.string "ubi"
+    t.integer "business_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -54,10 +54,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_26_020350) do
     t.string "specialty_code_desc"
     t.string "status_code"
     t.string "ubi"
-    t.string "effective"
-    t.string "expires"
+    t.date "effective"
+    t.date "expires"
     t.string "status_desc"
-    t.string "status"
     t.integer "contractor_id"
     t.integer "state_id"
     t.datetime "created_at", null: false

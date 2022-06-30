@@ -13,7 +13,7 @@ Rails.application.configure do
 
   # Force all access to the app over SSL, use Strict-Transport-Security
   # note --> investigate: are cookies secure cookies?
-  config.force_ssl = true #{secure_cookies: false}
+  # config.force_ssl = true #{secure_cookies: false}
 
   # explicitly-defined Rails 7 defaults
   config.session_store :cookie_store#, key: "rails-app"

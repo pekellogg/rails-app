@@ -21,35 +21,6 @@ rails_env = ENV.fetch("RAILS_ENV", "development")
 environment(rails_env)
 pidfile ENV.fetch("PIDFILE")  { "tmp/pids/server.pid" }
 
-if rails_env == "development"
-  ssl_bind(
-    "0.0.0.0",
-    rails_port,
-    key: ENV.fetch("SSL_KEY_FILE", "config/certs/localhost-key.pem"),
-    cert: ENV.fetch("SSL_CERT_FILE", "config/certs/localhost.pem"),
-    verify_mode: "none"
-  )
-else
-  port(rails_port)
-end
-
-# GC 4x before forking workers
-# nakayoshi_fork # --> OK for MRI Ruby per Puma 5.6.4 docs
-# wait_for_less_busy_worker
-# fork_worker
-
-# after_worker_boot do
-#   Rails.app_class.load_tasks
-#   begin
-#     Rake::Task["external_data:refresh"].execute
-#     Rake::Task["external_data:refresh"].reenable
-#   rescue Exception => e
-#     Rails.logger.error "ERROR with external_data:refresh Rake job"
-#     Rails.logger.error(e.inspect)
-#     Rails.logger.error(e.backtrace)
-#   end
-# end
-
 # restart puma with `rails restart`
 plugin(:tmp_restart)
 

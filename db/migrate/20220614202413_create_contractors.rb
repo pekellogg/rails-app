@@ -4,8 +4,8 @@ class CreateContractors < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :first_name
       t.string :last_name
-      t.string :business_ubi
-
+      t.string :ubi
+      t.integer :business_id
       t.timestamps
     end
   end

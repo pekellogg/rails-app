@@ -1,0 +1,14 @@
+current directory: /home/pekellogg/test/rails-app/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20220629-9974-eqgdqu.rb extconf.rb
+creating Makefile
+
+current directory: /home/pekellogg/test/rails-app/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\= clean
+rm -fr false *.o  *.bak mkmf.log .*.time
+
+current directory: /home/pekellogg/test/rails-app/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: /home/pekellogg/test/rails-app/vendor/bundle/ruby/3.1.0/gems/json-2.6.2/ext/json
+make DESTDIR\= install

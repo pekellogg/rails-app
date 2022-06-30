@@ -2,7 +2,11 @@ require_relative "../helpers/users_helper.rb"
 require "pry"
 class SessionsController < ApplicationController
   def new
-    render(:new)
+    if current_user
+      redirect_to user_path(current_user)
+    else
+      render("/sessions/new")
+    end
   end
 
   def create
@@ -34,13 +38,14 @@ class SessionsController < ApplicationController
     # native log in within app
     else
       user = User.find_by(email: params[:session][:email].downcase)
-      if user && user.authenticate(params[:session][:password]) 
+
+      if user && user.authenticate(params[:session][:password_digest]) 
         log_in(user)
         flash.now[:notice] = "Welcome back, #{user.first_name}!"
         redirect_to(user)
       else
         flash.now[:danger] = "Invalid email/password combination!"
-        redirect_to(:new)
+        redirect_to("/login")
       end
     end
   end
@@ -54,5 +59,9 @@ class SessionsController < ApplicationController
 
   def auth
     request.env["omniauth.auth"]
+  end
+
+  def session_params
+    params.require(:session)
   end
 end

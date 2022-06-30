@@ -1,6 +1,44 @@
 class License < ApplicationRecord
-    belongs_to(:contractor)
-    belongs_to(:state)
-    # table headers constants
-    COLUMNS = ["number".to_sym, "type_code".to_sym, "code_desc".to_sym, "specialty_code".to_sym, "specialty_code_desc".to_sym, "status_code".to_sym, "ubi".to_sym, "effective".to_sym, "expires".to_sym, "status_desc".to_sym, "status".to_sym, "contractor_id".to_sym, "state_id".to_sym]
+    belongs_to :contractor
+    belongs_to :state
+
+    def self.active_licenses
+        today = Time.now
+        self
+            .select("*")
+            .where("licenses.expires >= ?", today)
+            .and(License.where.not(status_desc: "Suspended"))
+            .order("licenses.expires")
+    end
+
+    def self.general_licenses
+        self.active_licenses
+            .select("*")
+            .where("licenses.specialty_code_desc = 'General'")
+            .order("licenses.expires")
+    end
+
+    def self.distinct_types
+        today = Time.now
+        self
+            .select(:specialty_code_desc)
+            .distinct
+            .where("licenses.expires >= ? ", today)
+            .where.not(status_desc: "Suspended")
+            .order("licenses.specialty_code_desc")
+    end
+
+    def self.type(type)
+        self.active_licenses
+        .where("licenses.specialty_code_desc = ? ", type)
+        .order("licenses.expires")
+    end
+
+    def display_expires
+        self.expires.strftime("%m/%d/%Y")
+    end
+
+    def display_effective
+        self.effective.strftime("%m/%d/%Y")
+    end
 end

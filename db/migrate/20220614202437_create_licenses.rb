@@ -8,10 +8,9 @@ class CreateLicenses < ActiveRecord::Migration[7.0]
       t.string :specialty_code_desc
       t.string :status_code
       t.string :ubi
-      t.string :effective
-      t.string :expires
+      t.date :effective
+      t.date :expires
       t.string :status_desc
-      t.string :status
       t.integer :contractor_id
       t.integer :state_id
 

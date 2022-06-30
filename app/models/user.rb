@@ -1,7 +1,7 @@
 class User < ApplicationRecord
-    has_many(:projects)
-    has_many(:contractors, through: :projects)
-    has_many(:identities)
+    has_many :projects
+    has_many :contractors, through: :projects
+    has_many :identities
 
     # NAME
     validates(:first_name, presence: true, length: { maximum: 50 })

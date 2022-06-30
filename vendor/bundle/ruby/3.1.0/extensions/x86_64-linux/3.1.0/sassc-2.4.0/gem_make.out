@@ -1,0 +1,795 @@
+current directory: /home/pekellogg/test/rails-app/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
+/usr/bin/ruby -I /usr/share/rubygems -r ./siteconf20220629-3866-206ht3.rb extconf.rb
+creating Makefile
+
+current directory: /home/pekellogg/test/rails-app/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
+make DESTDIR\= clean
+rm -f 
+rm -fr libsass.so false *.o  *.bak mkmf.log .*.time
+
+current directory: /home/pekellogg/test/rails-app/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
+make DESTDIR\=
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast.o -c ./libsass/src/ast.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast2c.o -c ./libsass/src/ast2c.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast_fwd_decl.o -c ./libsass/src/ast_fwd_decl.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast_sel_cmp.o -c ./libsass/src/ast_sel_cmp.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast_sel_super.o -c ./libsass/src/ast_sel_super.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast_sel_unify.o -c ./libsass/src/ast_sel_unify.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast_sel_weave.o -c ./libsass/src/ast_sel_weave.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast_selectors.o -c ./libsass/src/ast_selectors.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast_supports.o -c ./libsass/src/ast_supports.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o ast_values.o -c ./libsass/src/ast_values.cpp
+./libsass/src/ast_values.cpp: In member function ‘virtual size_t Sass::Number::hash() const’:
+./libsass/src/ast_values.cpp:484:23: warning: loop variable ‘numerator’ creates a copy from type ‘const std::__cxx11::basic_string<char>’ [-Wrange-loop-construct]
+  484 |       for (const auto numerator : numerators)
+      |                       ^~~~~~~~~
+./libsass/src/ast_values.cpp:484:23: note: use reference type to prevent copying
+  484 |       for (const auto numerator : numerators)
+      |                       ^~~~~~~~~
+      |                       &
+./libsass/src/ast_values.cpp:486:23: warning: loop variable ‘denominator’ creates a copy from type ‘const std::__cxx11::basic_string<char>’ [-Wrange-loop-construct]
+  486 |       for (const auto denominator : denominators)
+      |                       ^~~~~~~~~~~
+./libsass/src/ast_values.cpp:486:23: note: use reference type to prevent copying
+  486 |       for (const auto denominator : denominators)
+      |                       ^~~~~~~~~~~
+      |                       &
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o backtrace.o -c ./libsass/src/backtrace.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o base64vlq.o -c ./libsass/src/base64vlq.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o bind.o -c ./libsass/src/bind.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o c2ast.o -c ./libsass/src/c2ast.cpp
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -DLIBSASS_VERSION='"3.6.4"' -m64 -o c99func.o -c ./libsass/src/c99func.c
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -fPIC -DLIBSASS_VERSION='"3.6.4"' -m64 -o cencode.o -c ./libsass/src/cencode.c
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o check_nesting.o -c ./libsass/src/check_nesting.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o color_maps.o -c ./libsass/src/color_maps.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o constants.o -c ./libsass/src/constants.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o context.o -c ./libsass/src/context.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o cssize.o -c ./libsass/src/cssize.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o emitter.o -c ./libsass/src/emitter.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o environment.o -c ./libsass/src/environment.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o error_handling.o -c ./libsass/src/error_handling.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o eval.o -c ./libsass/src/eval.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o eval_selectors.o -c ./libsass/src/eval_selectors.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o expand.o -c ./libsass/src/expand.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o extender.o -c ./libsass/src/extender.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o extension.o -c ./libsass/src/extension.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o file.o -c ./libsass/src/file.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o fn_colors.o -c ./libsass/src/fn_colors.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o fn_lists.o -c ./libsass/src/fn_lists.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o fn_maps.o -c ./libsass/src/fn_maps.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o fn_miscs.o -c ./libsass/src/fn_miscs.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o fn_numbers.o -c ./libsass/src/fn_numbers.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o fn_selectors.o -c ./libsass/src/fn_selectors.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o fn_strings.o -c ./libsass/src/fn_strings.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o fn_utils.o -c ./libsass/src/fn_utils.cpp
+In file included from ./libsass/src/prelexer.hpp:5,
+                 from ./libsass/src/parser.hpp:15,
+                 from ./libsass/src/fn_utils.cpp:5:
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::warn_kwd)]’:
+./libsass/src/fn_utils.cpp:38:35:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::warn_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+In file included from ./libsass/src/ast_supports.hpp:23,
+                 from ./libsass/src/ast.hpp:1054,
+                 from ./libsass/src/parser.hpp:11:
+./libsass/src/constants.hpp:51:23: note: ‘Sass::Constants::warn_kwd’ declared here
+   51 |     extern const char warn_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::error_kwd)]’:
+./libsass/src/fn_utils.cpp:38:35:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::error_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:52:23: note: ‘Sass::Constants::error_kwd’ declared here
+   52 |     extern const char error_kwd[];
+      |                       ^~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::debug_kwd)]’:
+./libsass/src/fn_utils.cpp:38:35:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::debug_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:53:23: note: ‘Sass::Constants::debug_kwd’ declared here
+   53 |     extern const char debug_kwd[];
+      |                       ^~~~~~~~~
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o inspect.o -c ./libsass/src/inspect.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o json.o -c ./libsass/src/json.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o lexer.o -c ./libsass/src/lexer.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o listize.o -c ./libsass/src/listize.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o allocator.o -c ./libsass/src/memory/allocator.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o shared_ptr.o -c ./libsass/src/memory/shared_ptr.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o operators.o -c ./libsass/src/operators.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o output.o -c ./libsass/src/output.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o parser.o -c ./libsass/src/parser.cpp
+In file included from ./libsass/src/prelexer.hpp:5,
+                 from ./libsass/src/parser.hpp:15,
+                 from ./libsass/src/parser.cpp:5:
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::else_kwd)]’:
+./libsass/src/parser.cpp:275:41:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::else_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+In file included from ./libsass/src/ast_supports.hpp:23,
+                 from ./libsass/src/ast.hpp:1054,
+                 from ./libsass/src/parser.hpp:11:
+./libsass/src/constants.hpp:41:23: note: ‘Sass::Constants::else_kwd’ declared here
+   41 |     extern const char else_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::ellipsis)]’:
+./libsass/src/parser.cpp:416:40:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::ellipsis’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:146:23: note: ‘Sass::Constants::ellipsis’ declared here
+  146 |     extern const char ellipsis[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::hash_lbrace)]’:
+./libsass/src/parser.cpp:445:75:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::hash_lbrace’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:140:23: note: ‘Sass::Constants::hash_lbrace’ declared here
+  140 |     extern const char hash_lbrace[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::rbrace)]’:
+./libsass/src/parser.cpp:445:75:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::rbrace’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:141:23: note: ‘Sass::Constants::rbrace’ declared here
+  141 |     extern const char rbrace[];
+      |                       ^~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::insensitive(const char*) [with const char* str = (& Sass::Constants::of_kwd)]’:
+./libsass/src/parser.cpp:740:72:   required from here
+./libsass/src/lexer.hpp:115:15: warning: the address of ‘Sass::Constants::of_kwd’ will never be NULL [-Waddress]
+  115 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:46:23: note: ‘Sass::Constants::of_kwd’ declared here
+   46 |     extern const char of_kwd[];
+      |                       ^~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::url_kwd)]’:
+./libsass/src/parser.cpp:2519:6:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::url_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:95:23: note: ‘Sass::Constants::url_kwd’ declared here
+   95 |     extern const char url_kwd[];
+      |                       ^~~~~~~
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o parser_selectors.o -c ./libsass/src/parser_selectors.cpp
+In file included from ./libsass/src/prelexer.hpp:5,
+                 from ./libsass/src/parser.hpp:15,
+                 from ./libsass/src/parser_selectors.cpp:5:
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::selector_combinator_child)]’:
+./libsass/src/parser_selectors.cpp:30:56:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::selector_combinator_child’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+In file included from ./libsass/src/ast_supports.hpp:23,
+                 from ./libsass/src/ast.hpp:1054,
+                 from ./libsass/src/parser.hpp:11:
+./libsass/src/constants.hpp:166:23: note: ‘Sass::Constants::selector_combinator_child’ declared here
+  166 |     extern const char selector_combinator_child[];
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::selector_combinator_general)]’:
+./libsass/src/parser_selectors.cpp:34:63:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::selector_combinator_general’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:167:23: note: ‘Sass::Constants::selector_combinator_general’ declared here
+  167 |     extern const char selector_combinator_general[];
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::selector_combinator_adjacent)]’:
+./libsass/src/parser_selectors.cpp:38:64:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::selector_combinator_adjacent’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:168:23: note: ‘Sass::Constants::selector_combinator_adjacent’ declared here
+  168 |     extern const char selector_combinator_adjacent[];
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o plugins.o -c ./libsass/src/plugins.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o position.o -c ./libsass/src/position.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o prelexer.o -c ./libsass/src/prelexer.cpp
+In file included from ./libsass/src/prelexer.hpp:5,
+                 from ./libsass/src/prelexer.cpp:10:
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::hash_lbrace)]’:
+./libsass/src/prelexer.cpp:106:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::hash_lbrace’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+In file included from ./libsass/src/prelexer.cpp:11:
+./libsass/src/constants.hpp:140:23: note: ‘Sass::Constants::hash_lbrace’ declared here
+  140 |     extern const char hash_lbrace[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::slash_slash)]’:
+./libsass/src/prelexer.cpp:277:15:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::slash_slash’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:137:23: note: ‘Sass::Constants::slash_slash’ declared here
+  137 |     extern const char slash_slash[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::calc_fn_kwd)]’:
+./libsass/src/prelexer.cpp:449:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::calc_fn_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:103:23: note: ‘Sass::Constants::calc_fn_kwd’ declared here
+  103 |     extern const char calc_fn_kwd[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::rbrace)]’:
+./libsass/src/prelexer.cpp:510:71:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::rbrace’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:141:23: note: ‘Sass::Constants::rbrace’ declared here
+  141 |     extern const char rbrace[];
+      |                       ^~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::supports_kwd)]’:
+./libsass/src/prelexer.cpp:745:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::supports_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:90:23: note: ‘Sass::Constants::supports_kwd’ declared here
+   90 |     extern const char supports_kwd[];
+      |                       ^~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::else_kwd)]’:
+./libsass/src/prelexer.cpp:851:60:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::else_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:41:23: note: ‘Sass::Constants::else_kwd’ declared here
+   41 |     extern const char else_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::url_kwd)]’:
+./libsass/src/prelexer.cpp:1081:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::url_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:95:23: note: ‘Sass::Constants::url_kwd’ declared here
+   95 |     extern const char url_kwd[];
+      |                       ^~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::tilde_equal)]’:
+./libsass/src/prelexer.cpp:1188:75:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::tilde_equal’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:112:23: note: ‘Sass::Constants::tilde_equal’ declared here
+  112 |     extern const char tilde_equal[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::pipe_equal)]’:
+./libsass/src/prelexer.cpp:1189:73:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::pipe_equal’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:113:23: note: ‘Sass::Constants::pipe_equal’ declared here
+  113 |     extern const char pipe_equal[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::caret_equal)]’:
+./libsass/src/prelexer.cpp:1190:76:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::caret_equal’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:114:23: note: ‘Sass::Constants::caret_equal’ declared here
+  114 |     extern const char caret_equal[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::dollar_equal)]’:
+./libsass/src/prelexer.cpp:1191:77:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::dollar_equal’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:115:23: note: ‘Sass::Constants::dollar_equal’ declared here
+  115 |     extern const char dollar_equal[];
+      |                       ^~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::star_equal)]’:
+./libsass/src/prelexer.cpp:1192:78:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::star_equal’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:116:23: note: ‘Sass::Constants::star_equal’ declared here
+  116 |     extern const char star_equal[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::eq)]’:
+./libsass/src/prelexer.cpp:1249:25:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::eq’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:126:23: note: ‘Sass::Constants::eq’ declared here
+  126 |     extern const char eq[];
+      |                       ^~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::neq)]’:
+./libsass/src/prelexer.cpp:1252:26:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::neq’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:127:23: note: ‘Sass::Constants::neq’ declared here
+  127 |     extern const char neq[];
+      |                       ^~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::gt)]’:
+./libsass/src/prelexer.cpp:1255:25:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::gt’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:122:23: note: ‘Sass::Constants::gt’ declared here
+  122 |     extern const char gt[];
+      |                       ^~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::gte)]’:
+./libsass/src/prelexer.cpp:1258:26:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::gte’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:123:23: note: ‘Sass::Constants::gte’ declared here
+  123 |     extern const char gte[];
+      |                       ^~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::lt)]’:
+./libsass/src/prelexer.cpp:1261:25:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::lt’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:124:23: note: ‘Sass::Constants::lt’ declared here
+  124 |     extern const char lt[];
+      |                       ^~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::lte)]’:
+./libsass/src/prelexer.cpp:1264:26:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::lte’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:125:23: note: ‘Sass::Constants::lte’ declared here
+  125 |     extern const char lte[];
+      |                       ^~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::ellipsis)]’:
+./libsass/src/prelexer.cpp:1452:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::ellipsis’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:146:23: note: ‘Sass::Constants::ellipsis’ declared here
+  146 |     extern const char ellipsis[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::url_fn_kwd)]’:
+./libsass/src/prelexer.cpp:1612:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::url_fn_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:94:23: note: ‘Sass::Constants::url_fn_kwd’ declared here
+   94 |     extern const char url_fn_kwd[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::progid_kwd)]’:
+./libsass/src/prelexer.cpp:1776:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::progid_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:101:23: note: ‘Sass::Constants::progid_kwd’ declared here
+  101 |     extern const char progid_kwd[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::slash_star)]’:
+./libsass/src/prelexer.hpp:139:25:   required from ‘const char* Sass::Prelexer::delimited_by(const char*) [with const char* beg = (& Sass::Constants::slash_star); const char* end = (& Sass::Constants::star_slash); bool esc = false]’
+./libsass/src/prelexer.cpp:289:15:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::slash_star’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:138:23: note: ‘Sass::Constants::slash_star’ declared here
+  138 |     extern const char slash_star[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::star_slash)]’:
+./libsass/src/prelexer.hpp:144:28:   required from ‘const char* Sass::Prelexer::delimited_by(const char*) [with const char* beg = (& Sass::Constants::slash_star); const char* end = (& Sass::Constants::star_slash); bool esc = false]’
+./libsass/src/prelexer.cpp:289:15:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::star_slash’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:139:23: note: ‘Sass::Constants::star_slash’ declared here
+  139 |     extern const char star_slash[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::mixin_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::mixin_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::mixin_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:34:23: note: ‘Sass::Constants::mixin_kwd’ declared here
+   34 |     extern const char mixin_kwd[];
+      |                       ^~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::include_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::include_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::include_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:37:23: note: ‘Sass::Constants::include_kwd’ declared here
+   37 |     extern const char include_kwd[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::function_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::function_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::function_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:35:23: note: ‘Sass::Constants::function_kwd’ declared here
+   35 |     extern const char function_kwd[];
+      |                       ^~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::return_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::return_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::return_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:36:23: note: ‘Sass::Constants::return_kwd’ declared here
+   36 |     extern const char return_kwd[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::debug_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::debug_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::debug_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:53:23: note: ‘Sass::Constants::debug_kwd’ declared here
+   53 |     extern const char debug_kwd[];
+      |                       ^~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::warn_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::warn_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::warn_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:51:23: note: ‘Sass::Constants::warn_kwd’ declared here
+   51 |     extern const char warn_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::for_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::for_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::for_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:43:23: note: ‘Sass::Constants::for_kwd’ declared here
+   43 |     extern const char for_kwd[];
+      |                       ^~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::each_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::each_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::each_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:48:23: note: ‘Sass::Constants::each_kwd’ declared here
+   48 |     extern const char each_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::while_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::while_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::while_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:50:23: note: ‘Sass::Constants::while_kwd’ declared here
+   50 |     extern const char while_kwd[];
+      |                       ^~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::if_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::if_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::if_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:40:23: note: ‘Sass::Constants::if_kwd’ declared here
+   40 |     extern const char if_kwd[];
+      |                       ^~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::extend_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::extend_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::extend_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:39:23: note: ‘Sass::Constants::extend_kwd’ declared here
+   39 |     extern const char extend_kwd[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::import_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::import_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::import_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:33:23: note: ‘Sass::Constants::import_kwd’ declared here
+   33 |     extern const char import_kwd[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::media_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::media_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::media_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:89:23: note: ‘Sass::Constants::media_kwd’ declared here
+   89 |     extern const char media_kwd[];
+      |                       ^~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::charset_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::charset_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::charset_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:88:23: note: ‘Sass::Constants::charset_kwd’ declared here
+   88 |     extern const char charset_kwd[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::content_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::content_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::content_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:38:23: note: ‘Sass::Constants::content_kwd’ declared here
+   38 |     extern const char content_kwd[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::at_root_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::at_root_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::at_root_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:32:23: note: ‘Sass::Constants::at_root_kwd’ declared here
+   32 |     extern const char at_root_kwd[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::error_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::error_kwd)]’
+./libsass/src/prelexer.cpp:732:8:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::error_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:52:23: note: ‘Sass::Constants::error_kwd’ declared here
+   52 |     extern const char error_kwd[];
+      |                       ^~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::with_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::with_kwd)]’
+./libsass/src/prelexer.cpp:797:28:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::with_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:58:23: note: ‘Sass::Constants::with_kwd’ declared here
+   58 |     extern const char with_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::without_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::without_kwd)]’
+./libsass/src/prelexer.cpp:801:31:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::without_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:59:23: note: ‘Sass::Constants::without_kwd’ declared here
+   59 |     extern const char without_kwd[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::if_after_else_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::if_after_else_kwd)]’
+./libsass/src/prelexer.cpp:851:60:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::if_after_else_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:42:23: note: ‘Sass::Constants::if_after_else_kwd’ declared here
+   42 |     extern const char if_after_else_kwd[];
+      |                       ^~~~~~~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::from_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::from_kwd)]’
+./libsass/src/prelexer.cpp:859:28:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::from_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:44:23: note: ‘Sass::Constants::from_kwd’ declared here
+   44 |     extern const char from_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::to_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::to_kwd)]’
+./libsass/src/prelexer.cpp:863:26:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::to_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:45:23: note: ‘Sass::Constants::to_kwd’ declared here
+   45 |     extern const char to_kwd[];
+      |                       ^~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::through_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::through_kwd)]’
+./libsass/src/prelexer.cpp:867:31:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::through_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:47:23: note: ‘Sass::Constants::through_kwd’ declared here
+   47 |     extern const char through_kwd[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::in_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::in_kwd)]’
+./libsass/src/prelexer.cpp:875:26:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::in_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:49:23: note: ‘Sass::Constants::in_kwd’ declared here
+   49 |     extern const char in_kwd[];
+      |                       ^~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::null_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::null_kwd)]’
+./libsass/src/prelexer.cpp:907:28:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::null_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:56:23: note: ‘Sass::Constants::null_kwd’ declared here
+   56 |     extern const char null_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::important_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::important_kwd)]’
+./libsass/src/prelexer.cpp:1108:45:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::important_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:97:23: note: ‘Sass::Constants::important_kwd’ declared here
+   97 |     extern const char important_kwd[];
+      |                       ^~~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::optional_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::optional_kwd)]’
+./libsass/src/prelexer.cpp:1114:27:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::optional_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:57:23: note: ‘Sass::Constants::optional_kwd’ declared here
+   57 |     extern const char optional_kwd[];
+      |                       ^~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::default_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::default_kwd)]’
+./libsass/src/prelexer.cpp:1120:43:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::default_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:54:23: note: ‘Sass::Constants::default_kwd’ declared here
+   54 |     extern const char default_kwd[];
+      |                       ^~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::global_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::global_kwd)]’
+./libsass/src/prelexer.cpp:1126:42:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::global_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:55:23: note: ‘Sass::Constants::global_kwd’ declared here
+   55 |     extern const char global_kwd[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::pseudo_not_fn_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::pseudo_not_fn_kwd)]’
+./libsass/src/prelexer.cpp:1177:39:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::pseudo_not_fn_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:98:23: note: ‘Sass::Constants::pseudo_not_fn_kwd’ declared here
+   98 |     extern const char pseudo_not_fn_kwd[];
+      |                       ^~~~~~~~~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::even_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::even_kwd)]’
+./libsass/src/prelexer.cpp:1181:28:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::even_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:99:23: note: ‘Sass::Constants::even_kwd’ declared here
+   99 |     extern const char even_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::odd_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::odd_kwd)]’
+./libsass/src/prelexer.cpp:1184:27:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::odd_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:100:23: note: ‘Sass::Constants::odd_kwd’ declared here
+  100 |     extern const char odd_kwd[];
+      |                       ^~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::true_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::true_kwd)]’
+./libsass/src/prelexer.cpp:1231:28:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::true_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:128:23: note: ‘Sass::Constants::true_kwd’ declared here
+  128 |     extern const char true_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::false_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::false_kwd)]’
+./libsass/src/prelexer.cpp:1234:29:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::false_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:129:23: note: ‘Sass::Constants::false_kwd’ declared here
+  129 |     extern const char false_kwd[];
+      |                       ^~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::insensitive(const char*) [with const char* str = (& Sass::Constants::only_kwd)]’:
+./libsass/src/lexer.hpp:273:15:   required from ‘const char* Sass::Prelexer::keyword(const char*) [with const char* str = (& Sass::Constants::only_kwd)]’
+./libsass/src/prelexer.cpp:1237:34:   required from here
+./libsass/src/lexer.hpp:115:15: warning: the address of ‘Sass::Constants::only_kwd’ will never be NULL [-Waddress]
+  115 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:92:23: note: ‘Sass::Constants::only_kwd’ declared here
+   92 |     extern const char only_kwd[];
+      |                       ^~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::insensitive(const char*) [with const char* str = (& Sass::Constants::and_kwd)]’:
+./libsass/src/lexer.hpp:273:15:   required from ‘const char* Sass::Prelexer::keyword(const char*) [with const char* str = (& Sass::Constants::and_kwd)]’
+./libsass/src/prelexer.cpp:1240:33:   required from here
+./libsass/src/lexer.hpp:115:15: warning: the address of ‘Sass::Constants::and_kwd’ will never be NULL [-Waddress]
+  115 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:119:23: note: ‘Sass::Constants::and_kwd’ declared here
+  119 |     extern const char and_kwd[];
+      |                       ^~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::insensitive(const char*) [with const char* str = (& Sass::Constants::or_kwd)]’:
+./libsass/src/lexer.hpp:273:15:   required from ‘const char* Sass::Prelexer::keyword(const char*) [with const char* str = (& Sass::Constants::or_kwd)]’
+./libsass/src/prelexer.cpp:1243:32:   required from here
+./libsass/src/lexer.hpp:115:15: warning: the address of ‘Sass::Constants::or_kwd’ will never be NULL [-Waddress]
+  115 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:120:23: note: ‘Sass::Constants::or_kwd’ declared here
+  120 |     extern const char or_kwd[];
+      |                       ^~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::insensitive(const char*) [with const char* str = (& Sass::Constants::not_kwd)]’:
+./libsass/src/lexer.hpp:273:15:   required from ‘const char* Sass::Prelexer::keyword(const char*) [with const char* str = (& Sass::Constants::not_kwd)]’
+./libsass/src/prelexer.cpp:1246:33:   required from here
+./libsass/src/lexer.hpp:115:15: warning: the address of ‘Sass::Constants::not_kwd’ will never be NULL [-Waddress]
+  115 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:121:23: note: ‘Sass::Constants::not_kwd’ declared here
+  121 |     extern const char not_kwd[];
+      |                       ^~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::insensitive(const char*) [with const char* str = (& Sass::Constants::using_kwd)]’:
+./libsass/src/lexer.hpp:273:15:   required from ‘const char* Sass::Prelexer::keyword(const char*) [with const char* str = (& Sass::Constants::using_kwd)]’
+./libsass/src/prelexer.cpp:1267:32:   required from here
+./libsass/src/lexer.hpp:115:15: warning: the address of ‘Sass::Constants::using_kwd’ will never be NULL [-Waddress]
+  115 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:132:23: note: ‘Sass::Constants::using_kwd’ declared here
+  132 |     extern const char using_kwd[];
+      |                       ^~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::expression_kwd)]’:
+./libsass/src/lexer.hpp:283:15:   required from ‘const char* Sass::Prelexer::word(const char*) [with const char* str = (& Sass::Constants::expression_kwd)]’
+./libsass/src/prelexer.cpp:1308:109:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::expression_kwd’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:102:23: note: ‘Sass::Constants::expression_kwd’ declared here
+  102 |     extern const char expression_kwd[];
+      |                       ^~~~~~~~~~~~~~
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o remove_placeholders.o -c ./libsass/src/remove_placeholders.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o sass.o -c ./libsass/src/sass.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o sass2scss.o -c ./libsass/src/sass2scss.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o sass_context.o -c ./libsass/src/sass_context.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o sass_functions.o -c ./libsass/src/sass_functions.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o sass_values.o -c ./libsass/src/sass_values.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o source.o -c ./libsass/src/source.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o source_map.o -c ./libsass/src/source_map.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o stylesheet.o -c ./libsass/src/stylesheet.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o to_value.o -c ./libsass/src/to_value.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o units.o -c ./libsass/src/units.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o utf8_string.o -c ./libsass/src/utf8_string.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o util.o -c ./libsass/src/util.cpp
+In file included from ./libsass/src/util.cpp:6:
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::slash_star)]’:
+./libsass/src/prelexer.hpp:139:25:   required from ‘const char* Sass::Prelexer::delimited_by(const char*) [with const char* beg = (& Sass::Constants::slash_star); const char* end = (& Sass::Constants::star_slash); bool esc = false]’
+./libsass/src/util.cpp:527:13:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::slash_star’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+In file included from ./libsass/src/ast_supports.hpp:23,
+                 from ./libsass/src/ast.hpp:1054,
+                 from ./libsass/src/util.cpp:3:
+./libsass/src/constants.hpp:138:23: note: ‘Sass::Constants::slash_star’ declared here
+  138 |     extern const char slash_star[];
+      |                       ^~~~~~~~~~
+./libsass/src/lexer.hpp: In instantiation of ‘const char* Sass::Prelexer::exactly(const char*) [with const char* str = (& Sass::Constants::star_slash)]’:
+./libsass/src/prelexer.hpp:144:28:   required from ‘const char* Sass::Prelexer::delimited_by(const char*) [with const char* beg = (& Sass::Constants::slash_star); const char* end = (& Sass::Constants::star_slash); bool esc = false]’
+./libsass/src/util.cpp:527:13:   required from here
+./libsass/src/lexer.hpp:89:15: warning: the address of ‘Sass::Constants::star_slash’ will never be NULL [-Waddress]
+   89 |       if (str == NULL) return 0;
+      |               ^
+./libsass/src/constants.hpp:139:23: note: ‘Sass::Constants::star_slash’ declared here
+  139 |     extern const char star_slash[];
+      |                       ^~~~~~~~~~
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o util_string.o -c ./libsass/src/util_string.cpp
+g++ -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I. -I./libsass/include   -fPIC -O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -std=c++11 -DLIBSASS_VERSION='"3.6.4"' -m64 -o values.o -c ./libsass/src/values.cpp
+rm -f libsass.so
+g++ -shared -o libsass.so ast.o ast2c.o ast_fwd_decl.o ast_sel_cmp.o ast_sel_super.o ast_sel_unify.o ast_sel_weave.o ast_selectors.o ast_supports.o ast_values.o backtrace.o base64vlq.o bind.o c2ast.o c99func.o cencode.o check_nesting.o color_maps.o constants.o context.o cssize.o emitter.o environment.o error_handling.o eval.o eval_selectors.o expand.o extender.o extension.o file.o fn_colors.o fn_lists.o fn_maps.o fn_miscs.o fn_numbers.o fn_selectors.o fn_strings.o fn_utils.o inspect.o json.o lexer.o listize.o allocator.o shared_ptr.o operators.o output.o parser.o parser_selectors.o plugins.o position.o prelexer.o remove_placeholders.o sass.o sass2scss.o sass_context.o sass_functions.o sass_values.o source.o source_map.o stylesheet.o to_value.o units.o utf8_string.o util.o util_string.o values.o -L. -L/usr/lib64 -L. -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed -Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1   -m64  -lm  -lc
+In function ‘lcs’,
+    inlined from ‘weaveParents’ at ./libsass/src/ast_sel_weave.cpp:563:74:
+./libsass/src/dart_helpers.hpp:122:14: warning: argument 1 value ‘18446744073709551615’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+  122 |     T* res = new T[mm * nn + 1];
+      |              ^
+/usr/include/c++/12/new: In function ‘weaveParents’:
+/usr/include/c++/12/new:128:26: note: in a call to allocation function ‘operator new []’ declared here
+  128 | _GLIBCXX_NODISCARD void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+      |                          ^
+strip -x libsass.so
+
+current directory: /home/pekellogg/test/rails-app/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
+make DESTDIR\= install
+/usr/bin/mkdir -p . ./.gem.20220629-3866-fdln2d/sassc
+exit > .sitearchdir.-.sassc.time
+/usr/bin/install -c -m 0755 libsass.so ./.gem.20220629-3866-fdln2d/sassc

@@ -5,7 +5,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # We will not release Ruby 2.6.11 even if a security vulnerability is found 
 # (but could release if a severe regression is found).
 # We recommend all Ruby 2.6 users to start migration to Ruby 3.1, 3.0, or 2.7 immediately.
-ruby '3.0.0'
+# ruby '3.0.0'
+ruby '3.1.2'
 
 # rails 5.2 will reach EoL in 6/2022
 gem 'rails'

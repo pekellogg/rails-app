@@ -1,0 +1,29 @@
+<h2>License Validator Quick Check</h2>
+<%= form_tag(licenses_path, method: :get) do %>
+    <%= text_field_tag(:query, params[:query], class: "field-tag", placeholder: "Enter license #") %>
+    <%= submit_tag("Confirm", name: nil, class: "button") %>
+<% end %>
+
+<% if @lookup %>
+    <p><%= @lookup.number %> is <%= @lookup.status_desc.upcase %></p>
+<% end %>
+
+<h2>All Unique Types (<%= @license_types.count %>)</h2>
+<div class="panel">
+    <% @license_types.each do |l| %>
+        <p><%= l.specialty_code_desc %></p>
+    <% end %>
+</div>
+<br><br><br> 
+
+<h2>General Licenses</h2>
+<% @active_licenses.each do |l| %>
+    <div class="panel">
+        <p>Contractor name: <%= l.contractor.full_name %></p>
+        <p>Contractor type: <%= l.specialty_code_desc %></p>
+        <p>License #: <%= l.number %></p>
+        <p>Expires: <%= l.display_expires %></p>
+        <p>Status: <%= l.status_desc %></p>
+    </div>
+    <br><br><br>    
+<% end %>

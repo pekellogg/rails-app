@@ -6,9 +6,9 @@ require "pry"
 desc "retrieve and refresh app external data"
 task refresh: :environment do
     Rake::Task["drop_tables"].execute
-    Rake::Task["api_call"].execute
-    Rake::Task["format_data"].execute
-    Rake::Task["import_data"].execute
+    Rake::Task["call"].execute
+    Rake::Task["prep_format"].execute
+    Rake::Task["import_formats"].execute
 end
 
 # drop tables

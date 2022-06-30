@@ -3,7 +3,7 @@
 <% if @contractors %>
   <ul>
     <% @contractors.each do |c| %>
-      <li><%= link_to(c.name, contractor_path(c)) %></li>
+      <li><%= link_to(c.full_name, contractor_path(c)) %></li>
     <% end %>
   </ul>
 <% end %>

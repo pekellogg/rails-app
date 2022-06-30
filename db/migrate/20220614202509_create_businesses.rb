@@ -7,7 +7,6 @@ class CreateBusinesses < ActiveRecord::Migration[7.0]
       t.string :address
       t.string :city
       t.string :zip
-      t.string :state
       t.integer :state_id
       t.string :code
       t.string :code_desc

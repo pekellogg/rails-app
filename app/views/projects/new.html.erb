@@ -1,2 +1,38 @@
 <h3>Create a Project</h3>
-<%= render("form") %>
+<div class="panel">
+    <%= form_for @project do |f| %>
+        <% if @project.errors.any? %>
+            <div id="error_explanation">
+                <h3><%= pluralize(@project.errors.count, "error") %> prohibited this post from being saved:</h3>
+                <ul>
+                    <% @project.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                    <% end %>
+                </ul>
+            </div>
+        <% end %>
+        <div class="name_field">
+            <%= f.label(:name, class: "form-label") %><br>
+            <%= f.text_field(:name, placeholder: "Name", class: "field-tag") %><br>
+        </div>
+
+        <div class="desc_field">
+            <%= f.label(:desc, class: "form-label") %><br>
+            <%= f.text_area(:desc, placeholder: "Description", class: "field-tag") %><br><br>
+        </div>
+
+        <div class="contractor_field">
+            <%= f.label(:contractor) %><br>
+            <%= f.collection_select(:contractor_id, Contractor.all, :id, :name, { include_blank: true }) %>
+        </div>
+
+        <div class="user_field">
+            <%= f.label(:user_id, class: "form-label") %><br>
+            <%= f.hidden_field :user_id, value: @user.id %>
+        </div>
+
+        <div class="actions">
+            <%= f.submit("Submit", class: "button") %>
+        </div>
+    <% end %>
+</div>

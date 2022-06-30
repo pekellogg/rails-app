@@ -7,7 +7,7 @@ class UsersController < ApplicationController
         if logged_in?
             render(:show)
         else
-            redirect_to("sessions/new")
+            redirect_to("/login")
         end
     end
 
@@ -20,7 +20,7 @@ class UsersController < ApplicationController
         if @user.save
             log_in(@user)
             flash.now[:success] = "Welcome, #{@user.first_name}!"
-            redirect_to(:show)
+            redirect_to(user_path(@user))
         else
             flash.now[:alert] = "Could not create account!"
             render(:new)
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
             redirect_to(:show)
         else
             flash.now[:alert] = "Could not update account details!"
-            render(:edit)
+            redirect_to :edit
         end
     end
 
