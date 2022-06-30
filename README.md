@@ -5,9 +5,8 @@ This is a Rails web application that leverages the dataset provided by Data.WA A
 Fork and clone this repository to your machine.<br>
 If you so wish, it is most kind to request an App or API token, available here: https://dev.socrata.com/foundry/data.wa.gov/m8qx-ubtq<br>
 Use command $ touch .env to create an enviroment file to house a few variables: APP_TOKEN, GITHUB_KEY, GITHUB_SECRET, PORT, and RAILS_ENV for ease of use.<br><br>
-<a href="https://www.sec.gov/os/webmaster-faq#developers">Read</a> about the SEC's policy to declare User-Agent<br>
 Use command $ bundle install to install dependencies.<br>
-Use command $ shotgun to start app.<br>
+Use command $ rails s start app server.<br>
 Pull requests welcomed!<br>
 
 ------------------<br>
