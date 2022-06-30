@@ -1,6 +1,6 @@
 # rails-app
 <b><h4>License Validator</h4></b><br>
-This is a Rails web application that leverages the dataset provided by Data.WA API (powered by Socrata) called the "L&I Contractor License Data - General". The API publishes all WA state contractors' licenses, including various details and, most importantly, a license expiration date. <br><br>
+This is a Rails web application that leverages the dataset provided by Data.WA API (powered by Socrata) called the <i><b>"L&I Contractor License Data - General"</b></i>. The API publishes all WA state contractors' licenses, including various details and, most importantly, a license expiration date. <br><br>
 <b>Installation</b><br>
 Fork and clone this repository to your machine.<br>
 If you so wish, it is most kind to request an App or API token, available here: https://dev.socrata.com/foundry/data.wa.gov/m8qx-ubtq<br>
