@@ -9,9 +9,9 @@ Use command $ bundle install to install dependencies.<br>
 Use command $ rails s start app server.<br>
 Pull requests welcomed!<br>
 
-------------------<br>
+---------------------<br>
 resources citation<br>
-------------------<br>
+---------------------<br>
 API: https://data.wa.gov/resource/m8qx-ubtq.json?state=WA<br>
 docs: https://dev.socrata.com/foundry/data.wa.gov/m8qx-ubtq<br>
 API refresh: https://data.wa.gov/Labor/L-I-Contractor-License-Data-General/m8qx-ubtq<br>
