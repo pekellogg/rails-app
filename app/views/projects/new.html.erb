@@ -26,11 +26,6 @@
             <%= f.collection_select(:contractor_id, Contractor.all, :id, :name, { include_blank: true }) %>
         </div>
 
-        <div class="user_field">
-            <%= f.label(:user_id, class: "form-label") %><br>
-            <%= f.hidden_field :user_id, value: @user.id %>
-        </div>
-
         <div class="actions">
             <%= f.submit("Submit", class: "button") %>
         </div>

@@ -1,20 +1,19 @@
 class ProjectsController < ApplicationController
+    before_action :set_project, only: [:show, :edit, :update]
+    
     def index
-        @user = User.find(params[:user_id])
-        @projects = @user.projects
     end
     
     def show
-        @project = Project.find(params[:id])
     end
     
       def new
-        @user = User.find(params[:user_id])
-        @project = Project.new
+        @project = Project.new(user_id: current_user.id)
       end
 
     def create
         @project = Project.new(project_params)
+        @project.user_id = current_user.id
         if @project.save
             redirect_to(@project)
         else
@@ -23,13 +22,9 @@ class ProjectsController < ApplicationController
     end
 
     def edit
-        @user = User.find(params[:user_id])
-        @project = Project.find(params[:id])
-        render(:edit)
     end
 
     def update
-        @project = Project.find(params[:id])
         @project.update(project_params)
         if @project.save
             redirect_to(@project)
@@ -39,14 +34,16 @@ class ProjectsController < ApplicationController
     end
 
     def destroy
-        @user = User.find_by(id: params[:user_id])
         @project = Project.find(params[:id])
         @project.destroy
-        flash.now[:notice] = "Project deleted!"
-        redirect_to(user_projects_path(user))
+        redirect_to(current_user)
     end
 
     private
+
+    def set_project
+        @project = Project.find(params[:id])
+    end
 
     def project_params
         params.require(:project).permit(:name, :type, :desc, :status, :user_id, :contractor_id)

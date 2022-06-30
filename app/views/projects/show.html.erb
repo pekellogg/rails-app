@@ -3,5 +3,4 @@
 <p>Description: <%= @project.desc %></p>
 <p>Contractor: <%= @project.contractor.full_name %></p>
 
-<%= link_to("Edit", edit_user_project_path(@project)) %> | <%= button_to "Delete", destroy_user_project_path, method: :delete,
-  form: {data: {turbo_confirm: 'Are you sure?'}} %>
+<%= link_to("Edit", edit_user_project_path(@project)) %> | <%= button_to "Destroy", user_project_path(@project), method: :delete %>
